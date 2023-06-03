@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Doughnut Lab Chatbot</title>
+    <style>
+        body {
+            background-image: url('https://i.imgur.com/EzQaeEI.png');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: blue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Doughnut Lab Chatbot</h1>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger intent="WELCOME"
+                      chat-title="doughnut-lab"
+                      agent-id="c89aa984-400b-4ab7-a6b8-157df2fb29d3"
+                      language-code="en"></df-messenger>
+    </div>
+</body>
+</html>
